@@ -13,7 +13,7 @@ const Service = () => {
 
   return (
     <Container>
-      {rates.data.relationships.rates.data.length === 0 ? (
+      {rates && rates.data.relationships.rates.data.length === 0 ? (
         <>
           <H1> Lo sentimos, no encontramos tarifas para tu envío </H1>
           <p className="font-inter mt-8 mb-4">
@@ -27,11 +27,12 @@ const Service = () => {
         <>
           <H1> Elige tu servicio de paquetería </H1>
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:w-4/5 justify-center mt-12">
-            {rates.included
-              .filter((element) => element.type === 'rates')
-              .map((rate, index) => {
-                return <Rate rate={rate} key={index} bestRate={bestRate} />
-              })}
+            {rates &&
+              rates.included
+                .filter((element) => element.type === 'rates')
+                .map((rate, index) => {
+                  return <Rate rate={rate} key={index} bestRate={bestRate} />
+                })}
           </div>
         </>
       )}

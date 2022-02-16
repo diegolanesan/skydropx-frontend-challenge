@@ -18,7 +18,7 @@ const useBestRate = (rates) => {
   }
 
   useEffect(() => {
-    if (rates.data.relationships.rates.data.length > 0) {
+    if (rates && rates.data.relationships.rates.data.length > 0) {
       const bestRate = getBestRate()
       setBestRate(bestRate)
     }
