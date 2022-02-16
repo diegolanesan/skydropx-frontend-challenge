@@ -1,22 +1,16 @@
-import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import Link from 'next/link'
-import { startClock } from '../actions'
-import Examples from '../components/examples'
+import Container from '@/ui/Container'
+import H1 from '@/ui/H1'
+import NewShipment from '@/components/NewShipment'
 
 const Index = () => {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(startClock())
-  }, [dispatch])
-
   return (
-    <>
-      <Examples />
-      <Link href="/show-redux-state">
-        <a>Click to see current Redux State</a>
-      </Link>
-    </>
+    <Container>
+      <H1> Datos de envío </H1>
+      <p className="font-inter mt-4 text-center">
+        Ingresa los datos de tu envío para obtener las tarifas disponibles.
+      </p>
+      <NewShipment />
+    </Container>
   )
 }
 
