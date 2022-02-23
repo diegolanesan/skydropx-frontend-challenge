@@ -6,4 +6,4 @@ Aplicación realizada con Next.js, Redux y TailwindCSS.
 -  ``yarn dev`` para correr la aplicación.
 
 # Deploy
-Pueden encontrar su versión deployada en []("").
+Pueden encontrar su versión deployada [skydropx-frontend-challenge.vercel.app](https://skydropx-frontend-challenge.vercel.app/).
