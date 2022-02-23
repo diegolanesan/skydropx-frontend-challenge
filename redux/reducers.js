@@ -1,42 +1,42 @@
-import { combineReducers } from 'redux'
-import * as types from './types'
+import {combineReducers} from 'redux';
+import * as types from './types';
 
-const initialState = {
+export const initialState = {
   shipmentData: '',
   rates: '',
   label: '',
-  error: ''
-}
+  error: '',
+};
 
-const reducer = (state = initialState, { type, payload }) => {
+export const reducer = (state = initialState, {type, payload}) => {
   switch (type) {
     case types.CREATE_SHIPMENT:
       return {
         ...state,
-        rates: payload
-      }
+        rates: payload,
+      };
     case types.SAVE_SHIPMENT_DATA:
       return {
         ...state,
-        shipmentData: payload
-      }
+        shipmentData: payload,
+      };
     case types.CREATE_LABEL:
       return {
         ...state,
-        label: payload
-      }
+        label: payload,
+      };
     case types.CREATE_ERROR:
       return {
         ...state,
-        error: payload
-      }
+        error: payload,
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-const reducers = {
-  shipments: reducer
-}
+export const reducers = {
+  shipments: reducer,
+};
 
-export default combineReducers(reducers)
+export default combineReducers(reducers);

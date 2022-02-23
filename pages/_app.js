@@ -1,8 +1,9 @@
-import { Provider } from "react-redux";
-import { useStore } from "../redux/store";
-import "../global.css";
+/* eslint-disable require-jsdoc */
+import {Provider} from 'react-redux';
+import {useStore} from '../redux/store';
+import '../global.css';
 
-export default function App({ Component, pageProps }) {
+export default function App({Component, pageProps}) {
   const store = useStore(pageProps.initialReduxState);
 
   return (

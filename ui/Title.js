@@ -1,9 +1,9 @@
-const Title = ({ children, ...props }) => {
+const Title = ({children, ...props}) => {
   return (
-    <p className="text-back font-semibold" {...props}>
+    <p className="font-semibold text-black" {...props}>
       {children}
     </p>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;
