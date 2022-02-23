@@ -1,0 +1,9 @@
+{
+  "extends": ["next", "google", "plugin:tailwindcss/recommended"],
+  "root": true,
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "max-len": 0,
+    "linebreak-style": 0
+  }
+}
