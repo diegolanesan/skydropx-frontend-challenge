@@ -1,0 +1,80 @@
+export const rateMock = {
+  'id': '109300',
+  'type': 'rates',
+  'attributes': {
+    'created_at': '2022-02-23T02:05:14.813-06:00',
+    'updated_at': '2022-02-23T02:05:15.251-06:00',
+    'amount_local': '185.0',
+    'currency_local': 'MXN',
+    'provider': 'FEDEX',
+    'service_level_name': 'Fedex Express Saver',
+    'service_level_code': 'FEDEX_EXPRESS_SAVER',
+    'service_level_terms': null,
+    'days': 5,
+    'duration_terms': null,
+    'zone': null,
+    'arrives_by': null,
+    'out_of_area': false,
+    'out_of_area_pricing': '0.0',
+    'total_pricing': '185.0',
+    'is_ocurre': false,
+  },
+};
+
+export const shipmentMock = {
+  address_from: {
+    province: 'Ciudad de México',
+    city: 'Azcapotzalco',
+    name: 'Jose Fernando',
+    zip: 1900,
+    country: 'MX',
+    address1: 'Av. Principal #234',
+    company: 'skydropx',
+    address2: 'Centro',
+    phone: '5555555555',
+    email: 'skydropx@email.com',
+  },
+  parcels: [
+    {
+      weight: 3,
+      distance_unit: 'CM',
+      mass_unit: 'KG',
+      height: 20,
+      width: 30,
+      length: 40,
+    },
+  ],
+  address_to: {
+    province: 'Jalisco',
+    city: 'Guadalajara',
+    name: 'Jorge Fernández',
+    zip: '44100',
+    country: 'MX',
+    address1: ' Av. Lázaro Cárdenas #234',
+    company: '-',
+    address2: 'Americana',
+    phone: '5555555555',
+    email: 'ejemplo@skydropx.com',
+    reference: 'Frente a tienda de abarro',
+    contents: 'Test',
+  },
+  consignment_note_class_code: '53131600',
+  consignment_note_packaging_code: '1H1',
+};
+
+export const labelMock = {
+  'data': {
+    'id': '414',
+    'type': 'labels',
+    'attributes': {
+      'created_at': '2018-09-04T16:32:49.190-05:00',
+      'updated_at': '2018-09-04T16:32:49.190-05:00',
+      'status': null,
+      'tracking_number': 'XXXXXXXXXX',
+      'tracking_status': null,
+      'label_url': 'label-url.pdf',
+      'tracking_url_provider': 'https://www.grupocarssa.com/new/XXXXXXXXXX',
+      'rate_id': 11931,
+    },
+  },
+};
